@@ -1,0 +1,17 @@
+﻿plugins {
+    id 'com.android.application' version '7.1' apply false
+    id 'com.android.library' version '7.1' apply false
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+android {
+    defaultConfig {
+        targetSdk 30
+        minSdk 30
+        versionCode 1
+        versionName '1.0'
+    }
+}
